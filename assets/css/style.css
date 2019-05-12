@@ -1,0 +1,599 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #181818;
+}
+
+@font-face {
+    font-family: pantonmtaav3;
+    src: url(../fonts/pantonmtaav3-bold.ttf);
+}
+
+header, ul {
+  display: flex;
+}
+
+header {
+  position: relative;
+  justify-content: space-around;
+  width: 111.86790505675954vh;
+	align-content: center;
+	margin-top: 30px;
+  margin-left: 400px;
+}
+
+.header-nav {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 390px;
+  margin-left: 400px;
+}
+
+.contact-form {
+  display: none;
+}
+
+.hero, .hero-second {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 60px);
+  margin-top: 81px;
+}
+
+section h1 {
+  font-size: 30px;
+}
+
+.hero-content, .second-content {
+  margin-bottom: 50px;
+}
+
+.pic-subtitle {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  left: 50px;
+}
+
+.main-pic-subtitle {
+  display: block;
+  display: flex;
+  font-size: 12px;
+  color: #6AB04C;
+  font-weight: bold;
+}
+
+.main-pic-data {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.scroll-btn {
+  display: flex;
+  position: relative;
+  right: 500px;
+}
+
+.hero::before {
+	content: '';
+	width: 100%;
+	height: 100vh;
+	background: #E8F0F3;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+.hero-content::before {
+  content: 'nodmotors';
+	width: 100%;
+	position: absolute;
+	top: calc(50% - 80px);
+	font-size: 250px;
+	opacity: .3;
+	color: #fff;
+	overflow: hidden;
+	text-align: center;
+	text-shadow: 0 3px 6px rgba(24,24,24,.06);
+	z-index: -1;
+  left: 0;
+}
+
+.cars {
+  margin-left: 100px;
+}
+.cars h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 340px;
+}
+
+.cars p {
+  color: #95A5A6;
+  font-size: 10px;
+  margin-left: 340px;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0;
+}
+
+.left-menus {
+  display: flex;
+  justify-content: space-between;
+  width: 532px;
+  margin-left: 200px;
+}
+.menu {
+  position: relative;
+  margin: 0 10px;
+  width: 164px;
+  height: 40px;
+}
+
+.menu select {
+	width: 164px;
+  height: 40px;
+  border-radius: 30px;
+	background:  #fff;
+	box-shadow: 0 3px 6px rgba(24,24,24,.06);
+  padding: 12px 30px;
+  border: none;
+  margin-left: 135px;
+}
+
+ .right-menu select{
+  position: relative;
+  right: 420px;
+	background-image: linear-gradient(#6AB04C, #BADC58);
+	color: #fff;
+	border-radius: 30px;
+  width: 72px;
+  height: 40px;
+	padding: 13px;
+}
+
+.contact-form {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 7;
+  background: #fff;
+  opacity: .9;
+}
+.book {
+  padding: 15px 32px 15px 35px;
+	border-radius: 30px;
+	background-image: linear-gradient(#6AB04C, #BADC58);
+}
+
+.form-send {
+  width: 216px;
+  height: 30px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #6ab04c, #badc58);
+  color: #fff;
+  margin-top: 30px;
+  border: none;
+}
+
+form h1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+}
+
+.form-p {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  color: #95A5A6;
+  margin-bottom: 40px;
+}
+
+form textarea {
+  width: 216px;
+  height: 60px;
+}
+
+form input {
+  width: 216px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #e8f0f3;
+}
+
+.contact-form .message-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: calc(100% - 60px);
+	position: absolute;
+	top: 60px;
+	z-index: 3;
+	margin-top: 120px;
+}
+
+.message-info h1 {
+	padding-bottom: 100px;
+}
+.close {
+	position: absolute;
+	right: 20px;
+	color: #aaa;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.cars-menu {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px;
+  position: relative;
+  left: 150px;
+  width: 70%;
+}
+
+}
+.left-menus .menu:first-child {
+  margin-left: 0;
+}
+.left-menus .menu:last-child {
+  margin-right: 0;
+}
+
+.cars-content {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(34% - 30px);
+}
+
+.cars-content span:nth-child(1) {
+  color: #95A5A6;
+	font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  left: 50px;
+}
+
+.cars-content span:nth-last-of-type(1) {
+  color: #6AB04C;
+	font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  left: 0;
+}
+
+ /* colors  */
+
+.black {
+  background-color: #2a2b30;
+}
+
+.red {
+  background-color: #AA071E;
+  left: 5px;
+}
+
+.grey {
+  background-color: #95A5A6;
+  left: 5px;
+}
+.greyx2 {
+  left: 10px;
+  position: relative;
+}
+
+.greym6 {
+  position: relative;
+  left: 10px;
+}
+
+.green {
+  background-color: #6AB04C;
+  left: 10px;
+}
+
+.orange {
+  background-color: #FF664F;
+}
+
+.orangem6 {
+  position: relative;
+  left: 15px;
+}
+
+.blue {
+  background-color: #2F6AA2;
+  left: 5px;
+}
+
+.bluex7 {
+  left: 10px;
+}
+
+.yellow {
+  background-color: #D1BB3F;
+  left: 5px;
+}
+
+.greyx2, .greym6, .orangem6, .bluex7 {
+  position: relative;
+}
+
+.white, .black, .blue, .grey, .red, .green, .orange, .blue, .yellow {
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+}
+
+.white {
+  border: solid 1px #95a5a6;
+  background-color: #fff;
+  position: relative;
+  right: 5px;
+}
+
+.w1 {
+  float: left;
+}
+
+.topside {
+  margin-bottom: 141px;
+}
+
+.cars-img {
+	height: auto;
+	object-fit: cover;
+}
+.cars-title {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+/* footer */
+footer {
+  margin-top: 97px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-img {
+  margin-right: 200px;
+}
+footer p {
+position: relative;
+left: 100px;
+}
+
+footer a {
+  margin-left: 400px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 55px 0 96px;
+}
+
+.performance-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.performance-content p {
+  color: #95A5A6;
+}
+
+.leftP {
+  margin-left: 250px;
+}
+
+.rightP {
+  margin-left: 20px;
+  width: 50%
+}
+
+.left-img {
+  padding-left: 240px;
+}
+
+.right-img {
+  position: relative;
+  left: 20px;
+}
+
+.safety {
+  margin-top: 40px;
+  padding-bottom: 55px;
+}
+
+.safety-content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 450px);
+  padding-right: 10px;
+  margin-left: 240px;
+}
+
+.safety p {
+  color: #95A5A6;
+}
+
+.safety-content p, h1 {
+  padding-bottom: 20px;
+  width: 50%;
+}
+
+.safety-map {
+  width: 440px;
+  position: relative;
+  right: 300px;
+}
+
+.safety-map img {
+  padding-bottom: 35px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #E8F0F3;
+  border-radius: 10px;
+  padding: 60px 0;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.rate {
+  flex-direction: column;
+}
+
+.rating-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-content :first-child {
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.gallery img {
+  width: 15%;
+  object-fit: cover;
+  padding-right: 20px;
+  position: relative;
+  left: 240px;
+}
+
+.gallery img:last-child {
+  padding-right: 0;
+}
+
+.second-page-img, .second-p, .second-info, .second-link, .cars-title2 {
+  position: relative;
+}
+
+.second-page-img {
+  right: 180px;
+}
+
+.second-p {
+  top: -40px;
+  left: 300px;
+}
+
+.second-info {
+  right: 400px
+
+}
+
+.second-link {
+  right: 100px;
+}
+
+.cars-title2 {
+  left: 130px;
+}
+
+main.contact {
+	display: flex;
+	width: 100%;
+}
+
+.info {
+	display: flex;
+  width: 256px;
+  flex-direction: column;
+  background: #E8F0F3;
+  border-radius: 10px;
+  margin-left: 141px;
+}
+
+.info {
+	padding-left: 20px;
+}
+
+.info h1 {
+  font-size: 20px;
+	padding: 27px 0 20px;
+  font-weight: bold;
+}
+
+.contact-h1 {
+  position: absolute;
+  top: -2px;
+  right: 10px;
+}
+
+.detail {
+	display: flex;
+  flex-direction: column;
+	width: 250px;
+  height: 168;
+	padding: 37px 149px 29px 57px;
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(24,24,24,.06);
+}
+
+.detail-content {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.message_info {
+	display: flex;
+	flex-direction: column;
+}
+
+.message_info input, textarea{
+	width: 216px;
+	border-radius: 5px;
+	padding: 8px 0 8px 10px;
+	margin-top: 10px;
+}
+.contact-h1 {
+  display: flex;
+  position: relative;
+  bottom: 400px;
+}
+.send {
+	color: #fff;
+	background-image: linear-gradient(#6AB04C,#BADC58);
+}
