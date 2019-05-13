@@ -172,12 +172,11 @@ section h1 {
 	box-shadow: 0 3px 6px rgba(24,24,24,.06);
   padding: 12px 30px;
   border: none;
-  margin-left: 135px;
 }
 
  .right-menu select{
   position: relative;
-  right: 420px;
+  right: 100px;
 	background-image: linear-gradient(#6AB04C, #BADC58);
 	color: #fff;
 	border-radius: 30px;
@@ -397,6 +396,16 @@ form input {
 .cars-title {
 	font-size: 20px;
 	padding-top: 10px;
+}
+
+.cars-h1 {
+  position: relative;
+  right: 150px;
+}
+
+.cars p {
+  position: relative;
+  right: 150px;
 }
 
 /* footer */
@@ -631,7 +640,8 @@ main.main-conditions {
 }
 .main-conditions-title {
 	font-size: 30px;
-	text-align: center;
+  position: relative;
+  left: 220px;
 	padding: 15px 0;
 }
 .main-conditions p {
