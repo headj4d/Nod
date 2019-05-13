@@ -53,6 +53,12 @@ header {
   bottom: 15px
 }
 
+.input-form-3 {
+  border-radius: 5px;
+  background-color: #e8f0f3;
+  border: none;
+}
+
 .hero, .hero-second {
   display: flex;
   align-items: center;
