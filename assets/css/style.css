@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style-type: none;
   color: #181818;
+  font-family: pantonmtaav3, sans-serif;
 }
 
 @font-face {
@@ -34,6 +35,22 @@ header {
 
 .contact-form {
   display: none;
+}
+
+.input-form-1 {
+  border-radius: 5px;
+  background-color: #e8f0f3;
+  border: none;
+  position: relative;
+  bottom: 30px
+}
+
+.input-form-2 {
+  border-radius: 5px;
+  background-color: #e8f0f3;
+  border: none;
+  position: relative;
+  bottom: 15px
 }
 
 .hero, .hero-second {
@@ -79,12 +96,13 @@ section h1 {
   display: flex;
   position: relative;
   right: 500px;
+  bottom: 75px;
 }
 
 .hero::before {
 	content: '';
 	width: 100%;
-	height: 100vh;
+	height: 800px;
 	background: #E8F0F3;
 	position: absolute;
 	top: 0;
@@ -222,7 +240,6 @@ form input {
 	width: 100%;
 	height: calc(100% - 60px);
 	position: absolute;
-	top: 60px;
 	z-index: 3;
 	margin-top: 120px;
 }
@@ -516,8 +533,8 @@ main {
 }
 
 .second-info {
-  right: 400px
-
+  left: 550px;
+  bottom: 15px;
 }
 
 .second-link {
@@ -596,4 +613,23 @@ main.contact {
 .send {
 	color: #fff;
 	background-image: linear-gradient(#6AB04C,#BADC58);
+}
+
+main.main-conditions {
+  display: flex;
+	width: 50%;
+	margin-top: 80px;
+	margin-bottom: 50px;
+  justify-content: center;
+  margin-left: 400px;
+}
+.main-conditions-title {
+	font-size: 30px;
+	text-align: center;
+	padding: 15px 0;
+}
+.main-conditions p {
+	padding: 15px 0;
+	color: #95A5A6;
+	font-size: 14px;
 }
